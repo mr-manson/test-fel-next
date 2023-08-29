@@ -1,0 +1,58 @@
+@import "./../../../app/variables";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 276px;
+  opacity: 0.5;
+  background: $violet;
+  border-radius: $general-radius;
+  &.small {
+    width: 175px;
+  }
+  &.big {
+    width: 300px;
+  }
+  &.active {
+    opacity: 1;
+  }
+}
+
+.btn_name {
+  color: $white;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 23px 0;
+}
+
+.btn_icon {
+  margin-left: 16px;
+}
+
+/*=============== MEDIA ===============*/
+@media (max-width: 390px) {
+  .btn {
+    width: 100px;
+    border-radius: 13px;
+
+    &.small {
+      width: 70px;
+    }
+
+    &.big {
+      width: 120px;
+    }
+  }
+
+  .btn_name {
+    font-size: 10px;
+    padding: 10px 0;
+  }
+
+  .btn_icon {
+    margin-left: 7px;
+    width: 14px;
+    height: 14px;
+  }
+}

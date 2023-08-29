@@ -1,0 +1,189 @@
+@import "./../../app/variables";
+
+.schedule_container {
+  padding: 0 15px;
+  max-width: 1616px;
+  margin: 0 auto;
+}
+
+.schedule {
+  padding: 60px 0 0;
+}
+
+.title {
+  width: 375px;
+  margin-left: 6px;
+}
+
+.schedule_calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 188px;
+  padding-bottom: 116px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1586px;
+  padding-bottom: 110px;
+
+  &.blur {
+    filter: blur(7.5px);
+  }
+}
+
+.days_list,
+.nums_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 31px;
+}
+
+.days_list {
+  border-bottom: 1px solid $black;
+}
+
+.nums_list {
+  margin-bottom: 84px;
+}
+
+.day,
+.num {
+  width: 200px;
+  text-align: center;
+}
+
+.day {
+  padding-bottom: 14px;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.num {
+  padding-top: 34px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.calendar_rows {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+
+.row_item {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 31px;
+
+  .btn {
+    background-color: $violet-light;
+    opacity: 1;
+
+    .btn_name {
+      color: $black;
+      font-size: 35px;
+    }
+
+    &.active {
+      background-color: $violet;
+
+      .btn_name {
+        color: $white;
+      }
+    }
+  }
+}
+
+.row_item .btn {
+  width: 200px;
+  height: 65px;
+  border-radius: 15px;
+}
+
+/*----------------------------------------------*/
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 276px;
+  opacity: 0.5;
+  background: $violet;
+  border-radius: $general-radius;
+}
+
+.btn_name {
+  color: $white;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 23px 0;
+}
+/*----------------------------------------------*/
+
+/*=============== MEDIA ===============*/
+@media (max-width: 390px) {
+  .schedule {
+    padding: 43px 0 47px;
+  }
+
+  .title {
+    width: 86px;
+    margin: 0;
+  }
+
+  .schedule_calendar {
+    margin-top: 39px;
+    padding-bottom: 0;
+  }
+
+  .calendar {
+    padding-bottom: 25px;
+  }
+
+  .days_list,
+  .nums_list {
+    column-gap: 7px;
+  }
+
+  .nums_list {
+    margin-bottom: 19px;
+  }
+
+  .day,
+  .num {
+    width: 46px;
+  }
+
+  .day {
+    padding-bottom: 0;
+    font-size: 10px;
+  }
+
+  .num {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+
+  .calendar_rows {
+    row-gap: 5px;
+  }
+
+  .row_item {
+    column-gap: 7px;
+
+    .btn .btn_name {
+      font-size: 8px;
+    }
+  }
+
+  .row_item .btn {
+    width: 46px;
+    height: 15px;
+    border-radius: 3px;
+  }
+}

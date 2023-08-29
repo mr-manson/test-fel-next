@@ -1,0 +1,39 @@
+@import "./../../app/variables";
+
+.contacts_container {
+  padding: 0 15px;
+  max-width: 1604px;
+  margin: 0 auto;
+}
+
+.contacts {
+  padding: 155px 0 101px;
+}
+
+.title {
+  width: 453px;
+}
+
+.socials_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 46px;
+  margin-top: 155px;
+}
+
+/*=============== MEDIA ===============*/
+@media (max-width: 390px) {
+  .contacts {
+    padding: 45px 0 32px;
+  }
+
+  .title {
+    width: 114px;
+  }
+
+  .socials_group {
+    column-gap: 11px;
+    margin-top: 32px;
+  }
+}

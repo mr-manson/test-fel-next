@@ -1,0 +1,35 @@
+.clients_container {
+  padding: 0 15px;
+  max-width: 1616px;
+  margin: 0 auto;
+}
+
+.clients {
+  padding: 60px 0 0;
+}
+
+.title {
+  width: 490px;
+}
+
+.clients_img {
+  width: 1476px;
+  height: auto;
+  margin: 166px 0 104px 167px;
+}
+
+/*=============== MEDIA ===============*/
+@media (max-width: 390px) {
+  .clients {
+    padding: 17px 0 37px;
+  }
+
+  .title {
+    width: 123px;
+  }
+
+  .clients_img {
+    width: 322px;
+    margin: 30px 20px 0 31px;
+  }
+}

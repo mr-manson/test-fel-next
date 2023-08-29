@@ -1,0 +1,152 @@
+@import "./../../app/variables";
+
+.filter_wrapper {
+  position: relative;
+}
+
+.filter_container {
+  padding: 0 15px;
+  max-width: 1604px;
+  margin: 0 auto;
+}
+
+.filter {
+  padding: 171px 0 0;
+}
+
+.title {
+  max-width: 375px;
+}
+
+.filter_categories {
+  display: flex;
+  justify-content: center;
+  column-gap: 130px;
+  margin: 96px 0 164px;
+}
+
+.category_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category_title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 68px;
+}
+
+.btns_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 23px;
+}
+
+.form {
+  max-width: 130px;
+  border-radius: 15px;
+  padding: 15px 0;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.btn_name {
+  color: $white;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 23px 0;
+}
+
+.btn_icon {
+  margin-left: 16px;
+}
+
+.form_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 42px;
+  padding-bottom: 142px;
+}
+
+.input_field {
+  display: block;
+  width: 817px;
+  padding: 14px 20px;
+  font-size: 32px;
+  font-weight: 400;
+
+  border-radius: 15px;
+  background: rgba(104, 48, 147, 0.2);
+}
+
+.filter_decor {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+}
+
+/*=============== MEDIA ===============*/
+@media (max-width: 390px) {
+  .filter {
+    padding: 42px 0;
+  }
+
+  .title {
+    max-width: 99px;
+  }
+
+  .filter_categories {
+    flex-direction: column;
+    margin: 35px 22px 0;
+    row-gap: 22px;
+  }
+
+  .category_title {
+    font-size: 12px;
+    padding-bottom: 18px;
+  }
+
+  .btns_group {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+  }
+
+  .form {
+    max-width: 38px;
+    padding: 0 6px;
+    border-radius: 4px;
+
+    img {
+      width: 9px;
+      height: 9px;
+      padding: 0;
+    }
+  }
+
+  .form_group {
+    column-gap: 12px;
+    padding-bottom: 34px;
+  }
+
+  .input_field {
+    width: 238px;
+    padding: 4px 6px;
+    font-size: 9px;
+    border-radius: 4px;
+  }
+
+  .filter_decor {
+    height: 53px;
+    width: auto;
+    bottom: -19px;
+  }
+}
